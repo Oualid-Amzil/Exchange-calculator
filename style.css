@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --primary-color:  #00FFFF;
+    --secondary-color: #F0E68C;
+    --body-font: 'Playfair Display', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/stock-1863880_960_720.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:  var(--secondary-color);
+    font-size: 20px;
+    font-family: var(--body-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+h1 span {
+    color: var(--secondary-color);
+    font-size: 60px;
+}
+
+p {
+    text-align: center;
+}
+
+.btn {
+    color:#000;
+    background: var(--primary-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 60px;
+}
+
+.btn:hover {
+    border: 1px solid #fff;
+}
+
+.money-img {
+    width: 200px;
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select {
+    padding: 10px 20px 10px 20px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--secondary-color);
+    font-size: 16px;
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.currency select option {
+    background: #333333;
+}
+
+.currency select:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, .2);
+}
+
+.currency input {
+    color:#FFFFF0;
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+}
+
+.currency .input_2 {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.swap-rate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: #FFFFF0;
+    background: 	rgba(51,51,51, .7);
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+@media (max-width: 600px) {
+    .currency input {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 1160px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .currency input {
+        text-align: left;
+    }
+
+    .currency .input_2 {
+        text-align: right;
+    }
+
+    .btn {
+        padding: 10px 84px;
+        margin-bottom: 10px;
+    }
+}
